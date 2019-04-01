@@ -88,8 +88,8 @@ printf("El resultado de su calculo: %d " , num1 / num2);
 void factorial(int num1, int num2)  //EL FACTORIAL  RECIBE 2 PARAMETROS, LOS RESUELVE Y MUESTRA, NO HACE FALTA MANDARLO AL MAIN
 {
 int i;
-int factorial_1=0;
-int factorial_2=0;
+int factorial_1=1;
+int factorial_2=1;
 
 for(i=1;i<=num1;i++)
 {
@@ -102,3 +102,4 @@ for(i=1;i<=num2;i++)
 }
     printf("\nEl factorial del primer numero es: %d y el factorial del segundo numero es: %d",factorial_1, factorial_2);
 }
+
