@@ -10,8 +10,23 @@ void factorial(int num1, int num2);
 int main()
 {
 
-   menu(); // LLAMAMOS A LA FUNCION
+    // LLAMAMOS A LA FUNCION
+    do{
+        menu()
 
+        switch(opciones)
+    case 1:
+        printf("1.ingrese el primer operando");
+        break;
+    case 2:
+        printf("2.ingrse el segundo operando\n");
+    case 3:
+        printf("3.calcular tods las operaciones\n");
+    case 4:
+        printf("4.informar todos los resultados\n");
+    case 5:
+        printf("5.salir\n");
+    }while(opciones!=5)
 
 
     return 0;
@@ -34,8 +49,6 @@ void menu(){
     scanf("%d" , &opciones);
 
     // PEDIRLE LOS VALORES
-
-
     printf("\nDigite valor para numero1: ");
     scanf("%d" , &num1);
 
@@ -64,19 +77,19 @@ void menu(){
 void sumar(int num1, int num2) //LA SUMA RECIBE 2 PARAMETROS, LOS RESUELVE Y MUESTRA, NO HACE FALTA MANDARLO AL MAIN
 {
 
-printf("El resultado del calculo es : %d " , num1 + num2);
+    printf("El resultado del calculo es : %d " , num1 + num2);
 
 }
 void restar(int num1, int num2)  //LA RESTA RECIBE 2 PARAMETROS, LOS RESUELVE Y MUESTRA, NO HACE FALTA MANDARLO AL MAIN
 {
 
-printf("El resultado de su calculo: %d " , num1 - num2);
+    printf("El resultado de su calculo: %d " , num1 - num2);
 
 }
 void multiplicar(int num1, int num2) //LA MULTIPLICACION  RECIBE 2 PARAMETROS, LOS RESUELVE Y MUESTRA, NO HACE FALTA MANDARLO AL MAIN
 {
 
-printf("El resultado de su calculo: %d " , num1 * num2);
+    printf("El resultado de su calculo: %d " , num1 * num2);
 
 }
 void dividir(int num1, int num2) //LA DIVISION  RECIBE 2 PARAMETROS, LOS RESUELVE Y MUESTRA, NO HACE FALTA MANDARLO AL MAIN
@@ -106,28 +119,21 @@ if (num1 > 0)
     factorial_1=factorial_1*i;
 
     }
-
     }
     else
     {
         printf("El primer numero no tiene factorial \n");
     }
-
     if (num2 > 0)
     {
         for(i2=1;i2<=num2;i2++)
     {
     factorial_2=factorial_2*i2;
     }
-
     }
     else
     {
         printf("El segundo numero no tiene factorial \n");
     }
-
     printf("El factorial de A es : %d y El factorial de B es: %d",factorial_1,factorial_2);
-
-
-
 }
